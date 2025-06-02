@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // Use the Codespace Django REST API endpoint suffix for activities
-const API_URL = 'https://potential-doodle-66r5rjj5pxqfrrpq-8000.app.github.dev/api/activity/';
+const API_URL = 'https://potential-doodle-66r5rjj5pxqfrrpq-8000.app.github.dev/api/activities/';
 
 function Activities() {
   const [activities, setActivities] = useState([]);

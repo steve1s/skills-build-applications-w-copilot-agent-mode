@@ -555,8 +555,8 @@ python monafit-tracker/backendmanage.py monafit-tracker/backend/populate_db
 ```text
 Let's do the following step by step
 
-- Update #file:monafit-tracker/backend/monafit_tracker/views.py to replace the return for the rest api url endpiints with the codespace url http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev for django
-- Replace <codespace-name> with [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]
+- Update #file:monafit-tracker/backend/monafit_tracker/views.py to replace the return for the rest api url endpiints with the codespace url http://potential-doodle-66r5rjj5pxqfrrpq-8000.app.github.dev for django
+- Replace <codespace-name> with potential-doodle-66r5rjj5pxqfrrpq
 - Run the Django server
 
 HTTP 200 OK
