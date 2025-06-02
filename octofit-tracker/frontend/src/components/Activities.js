@@ -13,28 +13,15 @@ function Activities() {
   }, []);
 
   return (
-    <div className="card mb-4">
-      <div className="card-header bg-info text-white">
-        <h2 className="h4 mb-0">Activities</h2>
-      </div>
-      <div className="card-body">
-        <table className="table table-striped table-hover">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Duration (min)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {activities.map(activity => (
-              <tr key={activity.id || activity._id}>
-                <td>{activity.activity_type}</td>
-                <td>{activity.duration}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+    <div>
+      <h2>Activities</h2>
+      <ul className="list-group">
+        {activities.map(activity => (
+          <li className="list-group-item" key={activity.id || activity._id}>
+            {activity.type} - {activity.duration} min
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
